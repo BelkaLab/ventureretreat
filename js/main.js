@@ -1,9 +1,1 @@
----
----
-"---"
-
-const greetings = name => {
-  return `You can use es6 ${name}`;
-};
-
-console.log(greetings('c(ツ)-b'))
+"use strict"; "---"; var greetings = function greetings(name) { return "You can use es6 " + name; }; console.log(greetings('c(ツ)-b'));
