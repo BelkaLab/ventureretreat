@@ -1,0 +1,1 @@
+'use strict'; function open_apply_form() { console.log('yolo'); }
