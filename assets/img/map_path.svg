@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="260px" height="80px" viewBox="0 0 260 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>map</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Loading" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-580.000000, -391.000000)" opacity="0.571388134" stroke-linecap="square">
+        <g id="map" transform="translate(588.000000, 396.000000)" stroke="#FFFFFF">
+            <g id="X" transform="translate(0.020635, 53.724223)" stroke-width="12.2799997">
+                <path d="M3.68813706,0.0695307449 L19.2388771,12.652981" id="Path-4"></path>
+                <path d="M0.0223755147,11.5664581 L23.9096184,2.22190257" id="Path-3"></path>
+            </g>
+            <ellipse id="O" stroke-width="7.27999973" cx="241.431373" cy="28.7379802" rx="6.91671762" ry="6.90878787"></ellipse>
+            <path d="M20.4526918,38.9812614 C31.7643728,13.017636 44.8497861,0.035823262 59.7089316,0.035823262 C81.9976498,0.035823262 89.1102311,58.9596719 119.103018,58.9596719 C149.095806,58.9596719 149.255398,24.4856448 168.222021,24.4856448 C187.188644,24.4856448 189.822757,63.8017801 207.983821,63.8017801 C220.091198,63.8017801 228.295057,58.5823113 232.595398,48.1433735" id="Path-2" stroke-width="10" stroke-dasharray="25,25,20"></path>
+        </g>
+    </g>
+</svg>
