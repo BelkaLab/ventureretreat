@@ -39,40 +39,15 @@ layout: event
     </div>
   </div>
 
-  <div class="carousel__home scroll_reveal">
-    <div id="slider" class="carousel__home-slider_1">
-      <a data-fancybox="gallery" href="{{'/assets/img/home_carousel/big/6-big.jpg' | relative_url }}" data-caption="This image has a caption">
-        <img class="lazyload" data-src="{{'/assets/img/home_carousel/6-small.jpg' | relative_url }}" alt="">
-      </a>
-      <a data-fancybox="gallery" href="{{'/assets/img/home_carousel/big/7-big.jpg' | relative_url }}" data-caption="This image has a caption">
-        <img class="lazyload" data-src="{{'/assets/img/home_carousel/7-small.jpg' | relative_url }}" alt="">
-      </a>
-      <a data-fancybox="gallery" href="{{'/assets/img/home_carousel/big/8-big.jpg' | relative_url }}" data-caption="This image has a caption">
-        <img class="lazyload" data-src="{{'/assets/img/home_carousel/8-small.jpg' | relative_url }}" alt="">
-      </a>
-      <a data-fancybox="gallery" href="{{'/assets/img/home_carousel/big/9-big.jpg' | relative_url }}" data-caption="This image has a caption">
-        <img class="lazyload" data-src="{{'/assets/img/home_carousel/9-small.jpg' | relative_url }}" alt="">
-      </a>
-      <a data-fancybox="gallery" href="{{'/assets/img/home_carousel/big/10-big.jpg' | relative_url }}" data-caption="This image has a caption">
-        <img class="lazyload" data-src="{{'/assets/img/home_carousel/10-small.jpg' | relative_url }}" alt="">
-      </a>
-    </div>
-    <div id="slider" class="carousel__home-slider_2">
-      <a data-fancybox="gallery" href="{{'/assets/img/home_carousel/big/1-big.jpg' | relative_url }}" data-caption="This image has a caption">
-        <img class="lazyload" data-src="{{'/assets/img/home_carousel/1-small.jpg' | relative_url }}" alt="">
-      </a>
-      <a data-fancybox="gallery" href="{{'/assets/img/home_carousel/big/2-big.jpg' | relative_url }}" data-caption="This image has a caption">
-        <img class="lazyload" data-src="{{'/assets/img/home_carousel/2-small.jpg' | relative_url }}" alt="">
-      </a>
-      <a data-fancybox="gallery" href="{{'/assets/img/home_carousel/big/3-big.jpg' | relative_url }}" data-caption="This image has a caption">
-        <img class="lazyload" data-src="{{'/assets/img/home_carousel/3-small.jpg' | relative_url }}" alt="">
-      </a>
-      <a data-fancybox="gallery" href="{{'/assets/img/home_carousel/big/4-big.jpg' | relative_url }}" data-caption="This image has a caption">
-        <img class="lazyload" data-src="{{'/assets/img/home_carousel/4-small.jpg' | relative_url }}" alt="">
-      </a>
-      <a data-fancybox="gallery" href="{{'/assets/img/home_carousel/big/5-big.jpg' | relative_url }}" data-caption="This image has a caption">
-        <img class="lazyload" data-src="{{'/assets/img/home_carousel/5-small.jpg' | relative_url }}" alt="">
-      </a>
+  <div class="carousel__event scroll_reveal">
+    <div class="carousel__event--row">
+      {% for image in page.gallery-small.image %}
+        {% assign prev_i = forloop.index | minus: 1 %}
+        <div class="carousel__event--element" style="background-image: url('{{ image }}')">
+            <a data-fancybox="gallery" href="{{page.gallery-big.image[prev_i]}}" >
+            </a>
+        </div>
+      {% endfor %}
     </div>
     <img class="carousel__home__mountain-profile" src="{{'/assets/img/mountain_profile_2.svg' | relative_url }}" alt="">
   </div>

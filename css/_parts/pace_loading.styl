@@ -11,7 +11,6 @@ $map_path = $base_url '/assets/img/map_path.svg'
     background-size: contain
     border-radius: 10px
     bottom: 0
-    box-sizing: border-box
     height: 50px
     left: 0
     margin: auto
@@ -27,10 +26,8 @@ $map_path = $base_url '/assets/img/map_path.svg'
 
   .pace .pace-progress
     background: transparent
-    background-clip: padding-box
     border-radius: 2px
     box-shadow: 120px 0 $green, 220px 0 $green
-    box-sizing: border-box
     color: $red
     display: block
     font-family: sans-serif
@@ -44,13 +41,11 @@ $map_path = $base_url '/assets/img/map_path.svg'
     transform: translate3d(0, 0, 0)
     width: 400px
     -moz-background-clip: padding
-    -moz-border-radius: 2px
     -moz-box-sizing: border-box
     -ms-box-shadow: 120px 0 $green, 220px 0 $green
     -ms-box-sizing: border-box
     -o-box-sizing: border-box
     -webkit-background-clip: padding-box
-    -webkit-border-radius: 2px
     -webkit-box-shadow: 120px 0 $green, 220px 0 $green
     -webkit-box-sizing: border-box
     -webkit-transform: translate3d(0, 0, 0)
@@ -63,7 +58,7 @@ $map_path = $base_url '/assets/img/map_path.svg'
     z-index: 2001
 
   .pace.pace-inactive
-    opacity: 0
+    display: none
 
 @media (min-width: 768px)
   .pace

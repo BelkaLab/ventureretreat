@@ -56,7 +56,8 @@ $(document).ready(() => {
   $('[data-fancybox="gallery"]')
     .not($('.slick-cloned'))
     .fancybox({
-      buttons: ['slideShow', 'fullScreen', 'thumbs', 'share', 'close']
+      loop : true,
+      buttons: ['close']
     });
 
   let scheduleMenuWidth =
@@ -209,7 +210,7 @@ function negativeMenuToggle() {
   if (ww < 769) {
     let windowScrolltop = $(window).scrollTop();
     if ($('.schedule__line-container').length) {
-      let menuScrolltop = $('.schedule__line-container').offset().top - 116;
+      let menuScrolltop = $('.schedule__line-container').offset().top - 76;
       if (windowScrolltop > menuScrolltop) {
         if (!state.initialScrolltopScheduleMenu) {
           state.initialScrolltopScheduleMenu = menuScrolltop;

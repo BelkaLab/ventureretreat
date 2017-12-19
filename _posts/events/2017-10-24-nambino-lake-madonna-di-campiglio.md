@@ -7,9 +7,11 @@ permalink: "/event/:title"
 location: Madonna di Campiglio
 image: 1.png
 when_header: September 14-17, 2017
-how_was_it: 
-  - We have chosen the best of the best. The Tierser Alpl mountain refuge sits on top of Sieser Alm, which is the largest high-altitude Alpine meadow in Europe.
-  - The refuge is an historic hut used by mountaineers for decades, but has been completely restored and remodeled into a marvel of wooden architecture.
+how_was_it:
+- We have chosen the best of the best. The Tierser Alpl mountain refuge sits on top
+  of Sieser Alm, which is the largest high-altitude Alpine meadow in Europe.
+- The refuge is an historic hut used by mountaineers for decades, but has been completely
+  restored and remodeled into a marvel of wooden architecture.
 video: https://www.w3schools.com/html/mov_bbb.mp4
 caratteristics:
   altitude: 2240 mt
@@ -45,5 +47,25 @@ schedule:
   - time: 10.00 AM
     what: Hike to the Refuge
     description: It's a 2.5-3h walk to the refuge. But it's a beautiful one.
+gallery-small:
+  image:
+  - http://localhost:4000/ventureretreat/assets/img/events_photos/tierser_refugee/1.jpg
+  - http://localhost:4000/ventureretreat/assets/img/events_photos/tierser_refugee/2.jpg
+  - http://localhost:4000/ventureretreat/assets/img/events_photos/tierser_refugee/3.jpg
+  - http://localhost:4000/ventureretreat/assets/img/events_photos/tierser_refugee/4.jpg
+  - http://localhost:4000/ventureretreat/assets/img/events_photos/tierser_refugee/5.jpg
+  - http://localhost:4000/ventureretreat/assets/img/events_photos/tierser_refugee/6.jpg
+  - http://localhost:4000/ventureretreat/assets/img/events_photos/tierser_refugee/7.jpg
+  - http://localhost:4000/ventureretreat/assets/img/events_photos/tierser_refugee/8.jpg
+gallery-big:
+  image:
+  - http://localhost:4000/ventureretreat/assets/img/events_photos/tierser_refugee/big/1.jpg
+  - http://localhost:4000/ventureretreat/assets/img/events_photos/tierser_refugee/big/2.jpg
+  - http://localhost:4000/ventureretreat/assets/img/events_photos/tierser_refugee/big/3.jpg
+  - http://localhost:4000/ventureretreat/assets/img/events_photos/tierser_refugee/big/4.jpg
+  - http://localhost:4000/ventureretreat/assets/img/events_photos/tierser_refugee/big/5.jpg
+  - http://localhost:4000/ventureretreat/assets/img/events_photos/tierser_refugee/big/6.jpg
+  - http://localhost:4000/ventureretreat/assets/img/events_photos/tierser_refugee/big/7.jpg
+  - http://localhost:4000/ventureretreat/assets/img/events_photos/tierser_refugee/big/8.jpg
 ---
 

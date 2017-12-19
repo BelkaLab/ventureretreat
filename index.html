@@ -119,28 +119,19 @@ layout: home
 
 <div class="carousel__home scroll_reveal">
   <div id="slider" class="carousel__home-slider_1">
-    <a data-fancybox="gallery" href="{{'/assets/img/home_carousel/big/6-big.jpg' | relative_url }}" data-caption="This image has a caption">
-      <img class="lazyload" data-src="{{'/assets/img/home_carousel/6-small.jpg' | relative_url }}" alt="">
-    </a>
-    <a data-fancybox="gallery" href="{{'/assets/img/home_carousel/big/7-big.jpg' | relative_url }}" data-caption="This image has a caption">
-      <img class="lazyload" data-src="{{'/assets/img/home_carousel/7-small.jpg' | relative_url }}" alt="">
-    </a>
-    <a data-fancybox="gallery" href="{{'/assets/img/home_carousel/big/8-big.jpg' | relative_url }}" data-caption="This image has a caption">
-      <img class="lazyload" data-src="{{'/assets/img/home_carousel/8-small.jpg' | relative_url }}" alt="">
-    </a>
-    <a data-fancybox="gallery" href="{{'/assets/img/home_carousel/big/9-big.jpg' | relative_url }}" data-caption="This image has a caption">
-      <img class="lazyload" data-src="{{'/assets/img/home_carousel/9-small.jpg' | relative_url }}" alt="">
-    </a>
-    <a data-fancybox="gallery" href="{{'/assets/img/home_carousel/big/10-big.jpg' | relative_url }}" data-caption="This image has a caption">
-      <img class="lazyload" data-src="{{'/assets/img/home_carousel/10-small.jpg' | relative_url }}" alt="">
-    </a>
+    {% for image in current_event.gallery-small.image %}
+      {% assign prev_i = forloop.index | minus: 1 %}
+      <a data-fancybox="gallery" href="{{current_event.gallery-big.image[prev_i]}}" >
+        <img src="{{ image }}" alt="">
+      </a>
+    {% endfor %}
   </div>
   <img class="carousel__home__mountain-profile" src="{{'/assets/img/mountain_profile_2.svg' | relative_url }}" alt="">
 </div>
 
 
-<div class="schedule scroll_reveal" id="schedule">
-  <div class="container">
+<div class="schedule" id="schedule">
+  <div class="container scroll_reveal">
     <div class="row">
       <div class="col-12">
         {% include components/headings.html big="THE SCHEDULE" small="Your home for a weekend, in the mountains" %}
@@ -168,7 +159,7 @@ layout: home
         {% endfor %}
       </div>
     </div>
-    <div class="schedule__line-date-element-sizer--mobile scroll_reveal">
+    <div class="schedule__line-date-element-sizer--mobile">
       <ul class="line_background">
         {% for schedule in current_event.schedule %}
         <li class="schedule__line-date-element general__noselect tabselector__{{forloop.index}}" onclick="displayScheduleTab('{{forloop.index}}')">
@@ -184,7 +175,7 @@ layout: home
   {% for schedule in current_event.schedule %}
   <div class="tab__{{forloop.index}}">
     {% for program in schedule.program %}
-    <div class="row element scroll_reveal">
+    <div class="row element">
       <div class="col-12 col-sm-2">
         <p class="text--fat">{{program.time}}</p>
       </div>

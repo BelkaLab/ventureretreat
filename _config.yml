@@ -3,7 +3,7 @@ email: your-email@example.com
 description: > # this means to ignore newlines until "baseurl:"
   StyLivJek, a jekyll configuration
 baseurl: "/ventureretreat" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://code.belka.us" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 
@@ -18,13 +18,6 @@ plugins:
 stylus:
   compress: true
   path: css
-
-# page_gen:
-#   - index_files: true
-#     data: 'events'
-#     template: 'event'
-#     name: 'title'
-#     dir: 'event'
 
 jekyll_admin:
   hidden_links:
